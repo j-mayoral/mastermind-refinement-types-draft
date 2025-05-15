@@ -57,3 +57,7 @@ example {x y : Int}:
 
 example {x y : Int} (h1: x = y): (x * y ≥ 0) :=
   by smt [h1]
+
+example : ((1 : Int) < 2) := by smt
+
+example {x: Int} : (x * x ≥ 0) := by smt
